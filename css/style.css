@@ -1578,20 +1578,31 @@ button::-moz-focus-inner {
 
 .footer-container {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 }
 
-.footer__list {
+.footer__img {
+	width: 300px;
+	height: 200px;
+}
+
+.footer__bottom {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.footer__slider {
 	display: flex;
 }
 
-.footer__item:not(:last-child) {
-	margin-right: 20px;
+.footer__slider-img {
+	width: 300px;
+	height: 300px;
 }
 
-.footer__link:hover svg .fill{
-	transition: fill .3s ease-in-out;
-}
+
 
 /* media */
 
