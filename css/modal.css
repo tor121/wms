@@ -1,0 +1,10 @@
+.hystmodal__window {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+}
+
+.hystmodal__window .gallery__item {
+  width: 100%;
+  height: 100%;
+}
