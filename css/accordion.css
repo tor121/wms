@@ -1,4 +1,8 @@
 .accordion-item {
-  width: 500px;
+  width: 350px;
 }
+
+.accordion__documents .accordion-item {
+  width: 100%;
+} 
 

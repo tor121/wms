@@ -1,3 +1,45 @@
-.carousel-inner {
-  width: 600px;
+.slick-arrow{
+  position: absolute;
+  z-index: 2; 
+  top: 50%;
+  margin: -15px 0 0 0; 
+  padding: 10px;
+  width: 30px;
+  height: 30px; 
+  font-size: 0; 
+  border: none;
+  border-top: 4px solid var(--black-inversion);
+  border-right: 4px solid var(--black-inversion);
+  background-color: transparent;
+  opacity: .5;
 }
+
+.slick-arrow.slick-prev{
+  left: 40px; 
+  background: url('../img/left-arrow.png') 0 0 / 200% no-repeat;
+  transform: rotate(-135deg);
+}
+
+.slick-arrow.slick-next{
+  right: 40px; 
+  transform: rotate(45deg);
+}
+
+/* gallery-slider */
+.gallery__slider .slick-slide {
+  width: 100px;
+  height: 300px;
+}
+
+/* stair-slider */
+.STAIR__slider {
+  width: calc(100% - 350px);
+  height: 317px;
+}
+
+.STAIR__slider .slick-slide {
+  height: 317px;
+}
+
+
+

@@ -12,19 +12,22 @@
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/hystmodal.min.css">
 	<link rel="stylesheet" href="css/modal.css">
-	<link rel="stylesheet" href="css/flexilestyle.css">
 	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/effects.css">
 	<link rel="stylesheet" href="css/feachures.css">
 	<link rel="stylesheet" href="css/accordion.css">
-
+	
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.theme.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.carousel.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.31/grabbing.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/prettyphoto/3.1.5/css/prettyPhoto.css">
+
+	<!-- slick slider -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 	<!-- Remember to include jQuery :) -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -56,11 +59,10 @@
 	<script defer src="js/burger.js"></script>
 	<script defer src="js/select-STAIR.js"></script>
 	<script defer src="js/accordion.js"></script>
-	<script defer src="js/lights-slider-button.js"></script>
+	<script defer src="js/lights.js"></script>
 	<script defer src="js/contacts-map.js"></script>
 	<script defer src="js/contacts-form.js"></script>
 	<script defer src="js/flowing-scroll.js"></script>
-	<script defer src="js/jquery.flexisel.js"></script>
 
 	<link rel="stylesheet" href="css/swiper.css">
 
@@ -134,12 +136,31 @@
 		<section class="gallery">
 			<div class="container gallery__container">
 				<h2 class="second-heading gallery__heading">Галлерея</h2>	
-				<ul id="flexiselDemo3">
-					<li><img src="img/gallery-1.jpg" /></li>
-					<li><img src="img/gallery-2.jpg" /></li>
-					<li><img src="img/gallery-3.jpg" /></li>
-					<li><img src="img/gallery-4.jpg" /></li>                                                 
-			</ul>	
+				<div class="gallery__slider">
+					<div><img class="gallery__img" src="img/gallery-1.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-2.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-3.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-4.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-5.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-6.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-7.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-8.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-9.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-10.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-11.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-12.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-13.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-14.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-15.jpg" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-16.jpg" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-17.jpg" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-18.jpg" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-19.JPG" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-20.jpg" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-21.jpg" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-22.jpg" alt="gallery"></div>
+					<div><img class="gallery__img" src="img/gallery-23.JPG" alt="gallery"></div>
+				</div>	
 			</div>
 		</section>
 		<section class="STAIR" id="STAIR">
@@ -242,93 +263,106 @@
 							</div>
 						</div>
 					</div>
-					<div class="swiper STAIR__swiper">
-						<div class="swiper-btns">
-							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev">
-								<svg width="30" height="30" viewBox="-2 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path class="background" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
-									<path class="outline" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black"/>
-									<path d="M16 20L11 15L16 10" stroke="white"/>
-								</svg>                
-							</div>
-							<div class="swiper-pagination-STAIR"></div>
-							<div class="swiper-button-next">
-								<svg width="30" height="30" viewBox="-2 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path class="background" d="M15 5.96636e-08C23.2843 1.14601e-06 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 8.80661e-07 23.2843 1.96701e-06 15C3.05336e-06 6.71573 6.71573 -1.02669e-06 15 5.96636e-08Z" fill="#666666"/>
-									<path class="outline" d="M15 5.96636e-08C23.2843 1.14601e-06 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 8.80661e-07 23.2843 1.96701e-06 15C3.05336e-06 6.71573 6.71573 -1.02669e-06 15 5.96636e-08Z" stroke="black"/>
-									<path d="M14 10L19 15L14 20" stroke="white"/>
-								</svg>                
-							</div>
-							<!-- Pagination -->
-						</div>
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<a href="#ex1" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR1">
-								<span class="swiper-slide-border"></span>
-							</a>
-							<a href="#ex3" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR2"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex2" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR3"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex4" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR4"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex5" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR5"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex6" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR6"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex7" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR7"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex8" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR8"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex9" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR9"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex10" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR10"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex11" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR11"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex12" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR12"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex13" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR13"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex14" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR14"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex15" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR15"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex16" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR16"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex17" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR17"><span class="swiper-slide-border"></span> </a>
-							<a href="#ex18" rel="modal:open" class="cursor swiper-slide swiper-slide-img swiper-slide-img-STAIR18"><span class="swiper-slide-border"></span> </a>
-						</div> 
-					</div>
-				</div>
-				<p class="main-text STAIR__auth-768px">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-					<a href="#" class="cursor main-text STAIR__auth-link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
-				</p>					
-			</div> 
+					<div class="STAIR__slider">
+						<div><img class="gallery__img" src="img/STAIR1.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR2.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR3.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR4.jpg" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR5.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR6.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR7.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR8.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR9.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR10.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR12.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR13.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR15.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR16.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR17.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR18.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR19.JPG" alt="stair"></div>
+						<div><img class="gallery__img" src="img/STAIR20.JPG" alt="stair"></div>
+					</div>					
+				</div> 
+			</div>
 		</section>
 		
 		<section class="documents">
 			<div class="container documents__container">
 					<h2 class="second-heading documents__heading">Составление и оформление договорной строительной документации</h2>
-					<div class="documents__rules-wrapper">
-						<div class="document__card">
-							<div class="document__icon"></div>
-							<p class="document__rule">Формулирование общих, специальных и особых условий договоров в соответствии с подразделом 2 раздела I первой части ГК РФ</p>
+					<div class="accordion accordion-flush accordion__documents" id="accordionFlushExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOneOne">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneOne" aria-expanded="false" aria-controls="flush-collapseOneOne">
+									Формулирование общих, специальных и особых условий договоров в соответствии с подразделом 2 раздела I первой части ГК РФ
+								</button>
+							</h2>
+							<div id="flush-collapseOneOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOneOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt illum, soluta nisi doloribus exercitationem fugit nihil fugiat accusantium obcaecati praesentium corporis incidunt adipisci sequi, ea porro, doloremque minima? Necessitatibus!
+								</div>
 						</div>
-						<div class="document__card">
-							<div class="document__icon"></div>
-							<p class="document__rule">Оформление документов в соответствии с  ГОСТ Р 7.0.97-2016</p>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwoTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoTwo" aria-expanded="false" aria-controls="flush-collapseTwoTwo">
+									Оформление документов в соответствии с  ГОСТ Р 7.0.97-2016
+								</button>
+							</h2>
+							<div id="flush-collapseTwoTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoTwo" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam voluptatum error odio itaque! Iste non qui cupiditate excepturi deleniti. Nihil odio animi quis repellat, voluptate minima distinctio rerum? Temporibus.
+								</div>
 						</div>
-						<div class="document__card">
-							<div class="document__icon"></div>
-							<p class="document__rule">Корректировка технической составляющей документа</p>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingThreeThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeThree" aria-expanded="false" aria-controls="flush-collapseThreeThree">
+									Корректировка технической составляющей документа
+								</button>
+							</h2>
+							<div id="flush-collapseThreeThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeThree" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae vitae modi aliquid, ab voluptatibus ad voluptates explicabo itaque expedita, voluptate, at sint dolorum repudiandae laudantium animi possimus ex nemo inventore.
+								</div>
 						</div>
-						<div class="document__card">
-							<div class="document__icon"></div>
-							<p class="document__rule">Вычитка документов, исправлении грамматических, синтаксических, пунктуационных ошибок</p>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFourFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourFour" aria-expanded="false" aria-controls="flush-collapseFourFour">
+									Вычитка документов, исправлении грамматических, синтаксических, пунктуационных ошибок
+								</button>
+							</h2>
+							<div id="flush-collapseFourFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFourFour" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+							</div>
 						</div>
-						<div class="document__card">
-							<div class="document__icon"></div>
-							<p class="document__rule">Исправлении формулировок, не соответствующих нормам права</p>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFiveFive">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiveFive" aria-expanded="false" aria-controls="flush-collapseFiveFive">
+									Исправлении формулировок, не соответствующих нормам права
+								</button>
+							</h2>
+							<div id="flush-collapseFiveFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFiveFive" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+							</div>
 						</div>
-						<div class="document__card">
-							<div class="document__icon"></div>
-							<p class="document__rule">Внесение условий контроля качества</p>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingSixSix">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixSix" aria-expanded="false" aria-controls="flush-collapseSixSix">
+									Внесение условий контроля качества
+								</button>
+							</h2>
+							<div id="flush-collapseSixSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSixSix" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+							</div>
 						</div>
-						<div class="document__card">
-							<div class="document__icon"></div>
-							<p class="document__rule">Составление акта выполненных работ</p>
-						</div>
-						<div class="document__card document__img">
-							<svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M18.656.93,6.464,13.122A4.966,4.966,0,0,0,5,16.657V18a1,1,0,0,0,1,1H7.343a4.966,4.966,0,0,0,3.535-1.464L23.07,5.344a3.125,3.125,0,0,0,0-4.414A3.194,3.194,0,0,0,18.656.93Zm3,3L9.464,16.122A3.02,3.02,0,0,1,7.343,17H7v-.343a3.02,3.02,0,0,1,.878-2.121L20.07,2.344a1.148,1.148,0,0,1,1.586,0A1.123,1.123,0,0,1,21.656,3.93Z"/><path d="M23,8.979a1,1,0,0,0-1,1V15H18a3,3,0,0,0-3,3v4H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2h9.042a1,1,0,0,0,0-2H5A5.006,5.006,0,0,0,0,5V19a5.006,5.006,0,0,0,5,5H16.343a4.968,4.968,0,0,0,3.536-1.464l2.656-2.658A4.968,4.968,0,0,0,24,16.343V9.979A1,1,0,0,0,23,8.979ZM18.465,21.122a2.975,2.975,0,0,1-1.465.8V18a1,1,0,0,1,1-1h3.925a3.016,3.016,0,0,1-.8,1.464Z"/></svg>
-							<p class="document__rule">Оставить заявку</p>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingSevenSeven">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSevenSeven" aria-expanded="false" aria-controls="flush-collapseSevenSeven">
+									Внесение условий контроля качества
+								</button>
+							</h2>
+							<div id="flush-collapseSevenSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSevenSeven" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+							</div>
 						</div>
 					</div>
 			</div>
@@ -469,6 +503,11 @@
 				<div class="footer__left">
 					<p class="footer__contacts">
 					<h4 class="contacts__left-social-heading contacts__second-heading">Контакты</h4>
+					<div class="footer__phones">
+						<p class="footer__tel">+7 (999) 999-99-99</p>
+						<p class="footer__tel">+7 (999) 999-99-99</p>
+						<p class="footer__tel">+7 (999) 999-99-99</p>
+					</div>
 					<ul class="contacts__left-list">
 						<li class="contacts__left-item">
 							<a href="https://api.whatsapp.com/send?phone=79096209990" class="contacts__left-link cursor" aria-label="вотсап">
@@ -497,25 +536,31 @@
 					</p>
 				</div>
 				<div class="footer__right">
-					<div class="footer__slider">
-						<div><img class="footer__slider-img" src="img/Yard1.jpg" alt="Yard1"></div>
-						<div><img class="footer__slider-img" src="img/Yard2.jpg" alt="Yard1"></div>
-						<div><img class="footer__slider-img" src="img/Yard3.jpg" alt="Yard1"></div>
-					</div>
+					<img class="footer__map-img" src="img/Yard1.jpg" alt="Yard1">
+					<img class="footer__map-img" src="img/Yard2.jpg" alt="Yard1">
+					<img class="footer__map-img" src="img/Yard3.jpg" alt="Yard1">
 				</div>
 			</div>
 		</div>
 	</footer>
-
-		<script type="text/javascript">
-		$("#flexiselDemo3").flexisel({
-				visibleItems: 4,
-				itemsToScroll: 1,         
-				autoPlay: {
-						enable: true,
-						interval: 5000,
-						pauseOnHover: true
-				}        
+	<!-- slik slider -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.gallery__slider').slick({
+				arrows:true,
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 3
+			});
+			$('.STAIR__slider').slick({
+				arrows:true,
+				infinite: true,
+				slidesToShow: 2,
+				slidesToScroll: 1
+			});
 		});
 	</script>
 </body>
