@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if(dest !== undefined && dest !== '') { // проверяем существование
         $('html').animate({ 
           scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
-        }, 3000 // скорость прокрутки
+        }, 10 // скорость прокрутки
         );
     }
     return false;
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if(dest !== undefined && dest !== '') { // проверяем существование
           $('html').animate({ 
             scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
-          }, 3000 // скорость прокрутки
+          }, 10 // скорость прокрутки
           );
       }
       return false;
