@@ -58,4 +58,9 @@
   .slick-arrow.slick-next {
     right: 80px;
   } 
+
+  .slider-double {
+    width: calc(100% - 30px);
+    height: 317px;
+  }
 }

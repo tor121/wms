@@ -6,3 +6,8 @@
   width: 100%;
 } 
 
+@media (max-width: 969px) {
+  .accordion-item {
+    width: 100%;
+  }
+}

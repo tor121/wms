@@ -426,6 +426,10 @@ button::-moz-focus-inner {
 }
 
 /* electricity */ 
+.electricity {
+	margin-bottom: 70px;
+}
+
 .electricity__container {
 	display: flex;
 }
@@ -492,10 +496,6 @@ button::-moz-focus-inner {
 /*  */
 
 /* lights */
-.lights__container {
-	padding-bottom: 70px;
-}
-
 .lights__list {
 	display: flex;
 } 
@@ -692,6 +692,12 @@ button::-moz-focus-inner {
 	margin-right: 10px;
 }
 
+.contacts__left-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+
 /* media */
 
 @media (min-width: 726px) {
@@ -772,8 +778,6 @@ button::-moz-focus-inner {
 	}
 
 	.contacts__left-list {
-		display: flex;
-		justify-content: space-around;
 		margin-bottom: 15px;
 	}
 
@@ -786,16 +790,38 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 969px) {
-	.gallery__img {
-		padding: 0 60px;
+	.gallery__img,
+	.heat__img,
+	.electricity__img {
+		padding: 0 45px;
+	}
+
+	.heat__container {
+		flex-direction: column;
+	}
+
+	.accordion-item {
+		width: 100%;
+	}
+
+	.electricity__container {
+		flex-direction: column;
+	}
+
+	.electricity__text {
+		margin-bottom: 15px;
+	}
+
+	.electricity__paragraph {
+		width: 100%;
+	}
+
+	.electricity__slider {
+		width: 100%;
 	}
 }
 
 @media (max-width: 911px) {
-	.gallery__img {
-		padding: 0 60px;
-	}
-
 	.lights--item:nth-child(3) {
 		display: none;
 	}
