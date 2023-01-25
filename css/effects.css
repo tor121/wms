@@ -1,29 +1,4 @@
 
-:root {
-	--main-bg: #e7dd89;
-	--main-bg-05: rgba(231, 221, 137, .5);
-	--main-bg-07: rgba(231, 221, 137, .7);
-/* --main-bg: #004f7c ; */
-	--black-inversion: #fff;
-	--black-inversion-04: rgba(75, 74, 74, 0.4);
-	--black-inversion-05: rgba(255, 255, 255, 0.5);
-	--black-inversion-06: rgba(255, 255, 255, 0.6);
-	--black-inversion-09: rgba(255, 255, 255, 0.9);
-	--white-inversion: #000;
-	--amethyst: #004f7c;
-	--grey-black: #333;
-	--royal-purple: #044165;
-	--biloba-flower: #2e8bc0;
-	--STAIR: #ececec;
-	--heliotrope: #428cb7;
-	--heliotrope-04: rgba(66, 140, 183, 0.4);
-	--light-grey: #999;
-	--grey-accordion: #cacaca;
-	--plug: #b7b7b7;
-	--form-button-color: #d11616!important;
-	--swiper-pagination-color: #666!important;
-}
-
 /* hover */
 @media(min-width: 1025px) {
 	.header-top__link:hover:not(:focus-visible), .header-top__link-enter:hover:not(:focus-visible), .header-bottom__button:hover:not(:focus-visible) {

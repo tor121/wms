@@ -1,8 +1,25 @@
 window.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.menu-btn__open').addEventListener('click', () => {
-    document.querySelector('.menu__container').classList.add('active');
+  const hamburger = document.querySelector('.menu-btn__open');
+  const menu = document.querySelector('.menu__container');
+
+  const toggleMenu = () => {
+    menu.classList.toggle('active');
+  };
+
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    toggleMenu();
   });
-  document.querySelector('.menu-btn__close').addEventListener('click', () => {
-    document.querySelector('.menu__container').classList.remove('active');
+
+  document.addEventListener('click', (e) => {
+    const { target } = e;
+    const isMenu = target == menu || menu.contains(target);
+    const isHamburger = target == hamburger;
+    const isActive = menu.classList.contains('active');
+
+    if (!isMenu && !isHamburger && isActive) {
+      toggleMenu();
+    }
   });
 });

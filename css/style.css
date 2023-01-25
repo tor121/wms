@@ -134,12 +134,15 @@ button::-moz-focus-inner {
 }
 
 .main-heading {
+	padding-left: 15px;
 	font-size: 72px;
 	line-height: 84px;
 	color: var(--amethyst);
 }
 
 .second-heading {
+	margin-bottom: 30px;
+	padding-left: 15px;
 	font-weight: normal;
 	font-size: 48px;
 	line-height: 65px;
@@ -195,7 +198,7 @@ button::-moz-focus-inner {
 	z-index: 3;
 } 
 
-.hero__heading, .hero__descr, .hero__btn {
+.hero__heading, .hero__btn {
 	position: relative;
 	z-index: 2;
 }
@@ -248,7 +251,7 @@ button::-moz-focus-inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 9px 160px;
+	padding: 9px 175px;
 }
 
 .header-top {
@@ -304,7 +307,7 @@ button::-moz-focus-inner {
 	padding: 15px 0;
 }
 
-.cross-sign {
+/* .cross-sign {
 	cursor: pointer; 
 	position: relative; 
 	top: -10px; 
@@ -316,6 +319,23 @@ button::-moz-focus-inner {
 	width: 24px; 
 	height: 4px; 
 	background: var(--white-inversion);
+} */
+.cross-sign {
+  width: 16px;
+  height: 16px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@keyframes rota {
+	25% { transform: rotate(360deg); }
+ }
+
+.cross-sign:hover {
+	animation: rota 4s infinite normal;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
 }
 
 .cross-sign:before {
@@ -338,7 +358,7 @@ button::-moz-focus-inner {
 
 .header-top__link {
 	position: relative;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 25px;
 	color: var(--white-inversion);
@@ -347,20 +367,12 @@ button::-moz-focus-inner {
 
 .hero__container {
 	padding-top: 236px;
-	padding-bottom: 126px;
+	padding-bottom: 200px;
 }
 
 .hero__heading {
 	margin-bottom: 22px;
 	max-width: 597px;
-}
-
-.hero__descr {
-	margin-bottom: 92px;
-	max-width: 579px;
-	font-size: 18px;
-	line-height: 30px;
-	color: var(--amethyst);
 }
 
 /* about-us */
@@ -370,7 +382,7 @@ button::-moz-focus-inner {
 }
 
 .about-us__heading {
-	margin-bottom: 16px;
+	margin-bottom: 30px;
 }
 
 .about-us__descr {
@@ -379,12 +391,11 @@ button::-moz-focus-inner {
 
 /* gallery */ 
 .gallery__container {
-	padding-top: 150px;
-	padding-bottom: 70px;
+	padding-top: 80px;
 }
 
 .gallery__heading {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .gallery__img,
@@ -404,18 +415,28 @@ button::-moz-focus-inner {
 
 .STAIR__heading {
 	padding-top: 80px;
-	margin-bottom: 17px;
+	margin-bottom: 30px;
 	color: var(--white-inversion);
 }
 
 .STAIR__container {
 	display: flex;
+	justify-content: space-between;
 	padding-bottom: 70px;	
+}
+
+.STAIR__link {
+	color: var(--amethyst);
+}
+
+.STAIR__link:active {
+	color: var(--amethyst);
 }
 
 /* heat */
 .heat__container {
 	display: flex;
+	justify-content: space-between;
 	padding-bottom: 70px;
 }
 
@@ -433,11 +454,13 @@ button::-moz-focus-inner {
 
 .electricity__container {
 	display: flex;
+	justify-content: space-between;
 }
 
 .electricity__paragraph {
 	margin-bottom: 10px;
 	padding-right: 30px;
+	padding-left: 15px;
 	width: 350px;
 }
 
@@ -446,11 +469,12 @@ button::-moz-focus-inner {
 }
 
 .electricity__heading {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 .electriity__btn {
 	color: var(--amethyst);
+	padding-left: 15px;
 }
 
 /* documents */
@@ -460,7 +484,7 @@ button::-moz-focus-inner {
 }
 
 .documents__heading {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .documents__rules-wrapper {
@@ -506,15 +530,21 @@ button::-moz-focus-inner {
 }
 
 .lights__heading {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
-.lights__item.swiper-slide {
+.lights__swiper-container{
+	padding: 0 15px;
+}
+
+.lights__item.swiper-slide,
+.garden__item.swiper-slide {
 	height: unset;
 	/* min-height: 100%; */
 }
 
-.lights__item {	
+.lights__item,
+.garden__item {	
 	display: flex;
 	flex-direction: column;
 	width: calc((100% - 48px * 2 - 6px) / 3 );
@@ -563,7 +593,7 @@ button::-moz-focus-inner {
 }
 
 .lights__descr {
-	margin-bottom: 88px;
+	margin-bottom: 10px;
 	max-width: 400px;
 }
 
@@ -602,7 +632,8 @@ button::-moz-focus-inner {
 	display: none;
 }
 
-.lights__btn {
+.lights__btn, 
+.garden__btn {
 	position: relative;
 	padding-top: 17px;
 	padding-bottom: 17px;
@@ -625,11 +656,14 @@ button::-moz-focus-inner {
 	opacity: 0;
 }
 
-/* lights-slider */
 .lights__swiper {
 	padding-bottom: 50px;
 }
 
+/* garden */
+.garden__container {
+	padding-bottom: 70px;
+}
 
 /* footer */
 .footer {
@@ -662,7 +696,7 @@ button::-moz-focus-inner {
 }
 
 .contacts__second-heading {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 .footer__phones {
@@ -706,37 +740,45 @@ button::-moz-focus-inner {
 		flex-wrap: wrap;
 	} 
 	
-	.lights__item:not(:nth-child(3n)) {
+	.lights__item:not(:nth-child(3n)),
+	.garden__item:not(:nth-child(3n)) {
 		margin-right: 50px;
 	}
 	
-	.lights__item:nth-child(5) {
+	.lights__item:nth-child(5),
+	.garden__item:nth-child(5) {
 		margin-right: auto;
 	}
 	
-	.lights__item:nth-child(-n+3){
+	.lights__item:nth-child(-n+3),
+	.garden__item:nth-child(-n+3)
+	{
 		margin-bottom: 46px;
 	}
 	
-	.lights__item:not(:nth-child(-n+3)) {
+	.lights__item:not(:nth-child(-n+3)),
+	.garden__item:not(:nth-child(-n+3)) {
 		display: none;
 	}
 
-	.lights__swiper {
+	.lights__swiper,
+	.garden__swiper {
 		padding-bottom: 0;
 	}
 
+	.lights__btn-container,
 	.lights__btn-container {
 		display: flex;
 		justify-content: center;
 	}
 
-	.editions__checkbox:checked ~ .editions__label-text::before {
-		display: none;
-	}
 } 
 
 @media (max-width: 1300px) {
+	.second-heading {
+		font-size: 40px;
+		line-height: 40px;
+	}
 
 	.gallery__container {
 		padding-bottom: 0;
@@ -828,28 +870,34 @@ button::-moz-focus-inner {
 		display: none;
 	}
 
-	.lights__item {
+	.lights__item,
+	.garden__item {
     width: calc((100% - 36px) / 2 );
 }
 
-	.lights__item:not(:nth-child(3n)) {
+	.lights__item:not(:nth-child(3n)),
+	.garden__item:not(:nth-child(3n)) {
     margin-right: 0;
 }
 
-	.lights__item:nth-child(-n+3) {
+	.lights__item:nth-child(-n+3),
+	.garden__item:nth-child(-n+3) {
     margin-bottom: 0;
 		display: none;
 }
 
-	.lights__item:nth-child(-n+2) {	
+	.lights__item:nth-child(-n+2),
+	.garden__item:nth-child(-n+2) {	
 		display: flex;
 	}
 
-	.lights__item:nth-child(-n+4) {
+	.lights__item:nth-child(-n+4),
+	.garden__item:nth-child(-n+4) {
     margin-bottom: 48px;
 }
 
-	.lights__item:not(:nth-child(2n)) {
+	.lights__item:not(:nth-child(2n)),
+	.garden__item:not(:nth-child(2n)) {
 		margin-right: 36px;
 	}
 

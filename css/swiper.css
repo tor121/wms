@@ -12,8 +12,8 @@
   height: 30px; 
   font-size: 0; 
   border: none;
-  border-top: 4px solid var(--main-bg);
-  border-right: 4px solid var(--main-bg);
+  border-top: 8px solid var(--main-bg);
+  border-right: 8px solid var(--main-bg);
   background-color: transparent;
 }
 
@@ -35,18 +35,12 @@
 
 /* slider-double stair-slider */
 .slider-double {
-  width: calc(100% - 350px);
+  width: calc(100% - 390px);
   height: 317px;
 }
 
 .slider-double .slick-slide {
   height: 317px;
-}
-
-/* heat */
-.heat__slider {
-    width: calc(100% - 350px);
-    height: 317px;  
 }
 
 

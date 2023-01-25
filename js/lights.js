@@ -18,4 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     this.style.display = 'none';
   });
+
+  const containerGar = document.querySelector('.garden__container');
+  const btnGar = document.querySelector('.garden__btn');
+  const allItemsGar = document.querySelectorAll('.garden__item');
+  btnGar.addEventListener('click', function () {
+    allItemsGar.forEach((item) => {
+      item.style.display = 'flex';
+    });
+    containerGar.style.paddingBottom = '70px';
+    this.style.display = 'none';
+  });
 });
