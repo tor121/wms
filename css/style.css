@@ -286,7 +286,7 @@ button::-moz-focus-inner {
 	left: 145px;
 	padding: 22px 15px 15px 15px;
 	max-width: 300px;
-	background-color: var(--main-bg-07);
+	background-color: var(--main-bg);
 	border-radius: 20px;
 	transition: all ease-out 0.5s;
 	transform-origin: top center;
@@ -387,7 +387,8 @@ button::-moz-focus-inner {
 	margin-bottom: 40px;
 }
 
-.gallery__img {
+.gallery__img,
+.STAIR__img {
 	padding: 0px 15px;
 	width: 100%;
 	height: 100%;
@@ -791,6 +792,7 @@ button::-moz-focus-inner {
 
 @media (max-width: 969px) {
 	.gallery__img,
+	.STAIR__img,
 	.heat__img,
 	.electricity__img {
 		padding: 0 45px;
