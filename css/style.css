@@ -134,7 +134,8 @@ button::-moz-focus-inner {
 }
 
 .main-heading {
-	padding-left: 15px;
+	top: 60px;
+	left: -110px;
 	font-size: 72px;
 	line-height: 84px;
 	color: var(--amethyst);
@@ -144,7 +145,7 @@ button::-moz-focus-inner {
 	margin-bottom: 30px;
 	padding-left: 15px;
 	font-weight: normal;
-	font-size: 48px;
+	font-size: 34px;
 	line-height: 65px;
 	color: var(--grey-black);
 }
@@ -426,6 +427,7 @@ button::-moz-focus-inner {
 }
 
 .STAIR__link {
+	font-weight: 600;
 	color: var(--amethyst);
 }
 
@@ -457,14 +459,16 @@ button::-moz-focus-inner {
 	justify-content: space-between;
 }
 
-.electricity__paragraph {
+.electricity__paragraph,
+.heat__paragraph {
 	margin-bottom: 10px;
 	padding-right: 30px;
 	padding-left: 15px;
 	width: 350px;
 }
 
-.electricity__paragraph:not(:nth-child(-n+3)) {
+.electricity__paragraph:not(:nth-child(-n+3)),
+.heat__paragraph:not(:nth-child(-n+3)) {
 	display: none;
 }
 
@@ -472,7 +476,8 @@ button::-moz-focus-inner {
 	margin-bottom: 30px;
 }
 
-.electriity__btn {
+.electriity__btn,
+.heat__btn {
 	color: var(--amethyst);
 	padding-left: 15px;
 }
@@ -801,6 +806,13 @@ button::-moz-focus-inner {
 		width: 100%;
 	}
 
+	.electricity__img,
+	.heat__img,
+	.STAIR__img {
+		width: 70%;
+		margin: 0 auto;
+	}
+
 	.lights__item-top {
     height: 200px;
 }
@@ -914,4 +926,21 @@ button::-moz-focus-inner {
 		margin-bottom: 10px;
  }
 
+}
+
+@media (max-width: 768px){
+	.hero__heading {
+		font-size: 64px;
+	}
+
+	.electricity__img,
+	.heat__img,
+	.STAIR__img {
+		width: 100%;
+	}
+
+	.electricity__paragraph,
+	.heat__paragraph {
+		padding-right: 15px;
+	}
 }

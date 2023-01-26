@@ -30,3 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
     this.style.display = 'none';
   });
 });
+
+const btnElec = document.querySelector('.heat__btn');
+const allItemsElec = document.querySelectorAll('.heat__paragraph');
+btnElec.addEventListener('click', function () {
+  allItemsElec.forEach((item) => {
+    item.style.display = 'block';
+  });
+  this.style.display = 'none';
+});
