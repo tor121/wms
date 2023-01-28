@@ -10,15 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     container.style.paddingBottom = '70px';
   });
 
-  const btnElec = document.querySelector('.electriity__btn');
-  const allItemsElec = document.querySelectorAll('.electricity__paragraph');
-  btnElec.addEventListener('click', function () {
-    allItemsElec.forEach((item) => {
-      item.style.display = 'block';
-    });
-    this.style.display = 'none';
-  });
-
   const containerGar = document.querySelector('.garden__container');
   const btnGar = document.querySelector('.garden__btn');
   const allItemsGar = document.querySelectorAll('.garden__item');
@@ -31,10 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const btnElec = document.querySelector('.heat__btn');
-const allItemsElec = document.querySelectorAll('.heat__paragraph');
-btnElec.addEventListener('click', function () {
-  allItemsElec.forEach((item) => {
+const btnHeat = document.querySelector('.heat__btn');
+const allItemsHeat = document.querySelectorAll('.heat__paragraph');
+btnHeat.addEventListener('click', function () {
+  allItemsHeat.forEach((item) => {
+    item.style.display = 'block';
+  });
+  this.style.display = 'none';
+});
+
+const btnEl = document.querySelector('.electriity__btn');
+const allItemsEl = document.querySelectorAll('.electricity__paragraph');
+btnEl.addEventListener('click', function () {
+  allItemsEl.forEach((item) => {
     item.style.display = 'block';
   });
   this.style.display = 'none';
