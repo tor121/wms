@@ -19,7 +19,6 @@
 
 .slick-arrow.slick-prev{
   left: 40px; 
-  background: url('../img/left-arrow.png') 0 0 / 200% no-repeat;
   transform: rotate(-135deg);
 }
 
