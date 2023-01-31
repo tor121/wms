@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu-btn__open');
   const menu = document.querySelector('.menu__container');
+  const close = document.querySelector('.menu-btn__close');
 
   const toggleMenu = () => {
     menu.classList.toggle('active');
@@ -22,4 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
       toggleMenu();
     }
   });
+
+  close.addEventListener('click', () => {
+    toggleMenu();
+  })
 });

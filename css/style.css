@@ -1083,6 +1083,10 @@ color: var(--amethyst);
 	height: 15px;
 } */
 
+.menu__container {
+	left: 0;
+}
+
 .second-heading {
 	font-size: 26px;
 	line-height: 26px;
@@ -1090,7 +1094,8 @@ color: var(--amethyst);
 }
 
 .gallery__container,
-.STAIR__heading {
+.STAIR__heading, 
+.safety__container {
 	padding-top: 30px;
 }
 
@@ -1134,6 +1139,10 @@ color: var(--amethyst);
 .heat__paragraph {
 	padding-right: 15px;
 	width: 100%;
+}
+
+.garden__item:nth-last-child(-n+2) {
+	margin-bottom: 0;
 }
 
 .lights__btn, 

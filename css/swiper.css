@@ -58,7 +58,12 @@
 }
 
 @media (max-width: 768px) {
-  .slick-slider .slick-arrow{
-    display: none!important ;
+  .slick-arrow.slick-prev {
+    left: 30px;
   }
-}
+
+  .slick-arrow.slick-next {
+    right: 30px;
+  } 
+
+ } 
