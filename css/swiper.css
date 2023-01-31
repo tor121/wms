@@ -42,25 +42,23 @@
   height: 317px;
 }
 
-@media (max-width: 1300px) {
-  .slider-double {
-    width: calc(100% - 390px);
-    height: 317px;
-  }
-}
-
-
 @media (max-width: 969px) {
   .slick-arrow.slick-prev {
-    left: 80px;
+    left: 70px;
   }
 
   .slick-arrow.slick-next {
-    right: 80px;
+    right: 70px;
   } 
 
   .slider-double {
     width: calc(100% - 30px);
     height: 317px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-slider .slick-arrow{
+    display: none!important ;
   }
 }
