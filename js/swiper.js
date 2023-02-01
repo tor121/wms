@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
     setWrapperSize: true,
     autoplay: {
-      delay: 7000,
+      delay: 1000,
     },
     speed: 4000,
   });
