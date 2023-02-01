@@ -33,20 +33,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const btnHeat = document.querySelector('.heat__btn');
-const allItemsHeat = document.querySelectorAll('.heat__paragraph');
-btnHeat.addEventListener('click', function () {
-  allItemsHeat.forEach((item) => {
-    item.style.display = 'block';
-  });
-  this.style.display = 'none';
-});
-
-const btnEl = document.querySelector('.electriity__btn');
-const allItemsEl = document.querySelectorAll('.electricity__paragraph');
-btnEl.addEventListener('click', function () {
-  allItemsEl.forEach((item) => {
-    item.style.display = 'block';
-  });
-  this.style.display = 'none';
-});
