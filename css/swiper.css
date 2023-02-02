@@ -47,7 +47,7 @@
 .STAIR__img,
 .heat__img,
 .electricity__img {
-  padding: 0 30px;
+  padding: 0;
 }
 
 @media (max-width: 1300px) {
