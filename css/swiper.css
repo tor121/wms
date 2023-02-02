@@ -38,9 +38,28 @@
   height: 317px;
 }
 
-.slider-double .slick-slide {
-  height: 317px;
+.slider-double .slick-slide,
+.heat__slider div,
+.electricity__slider div {
+  height: 320px;
 }
+
+.STAIR__img,
+.heat__img,
+.electricity__img {
+  padding: 0 30px;
+}
+
+@media (max-width: 1300px) {
+  .slick-arrow.slick-prev {
+    left: 0;
+  }
+
+  .slick-arrow.slick-next {
+    right: 0;
+  } 
+ } 
+
 
 @media (max-width: 969px) {
   .slick-arrow.slick-prev {
@@ -66,4 +85,9 @@
     right: 10px;
   } 
 
+  .STAIR__img, 
+  .heat__img, 
+  .electricity__img {
+	  padding: 0;
+}
  } 
