@@ -523,8 +523,8 @@ padding-left: 15px;
 width: 350px;
 }
 
-.electricity__paragraph:not(:nth-child(-n+3)),
-.heat__paragraph:not(:nth-child(-n+3)) {
+.electricity__paragraph:not(:nth-child(-n+2)),
+.heat__paragraph:not(:nth-child(-n+2)) {
 display: none;
 }
 
