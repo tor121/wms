@@ -848,6 +848,7 @@ display: flex;
 /* copyrights */
 .copyrights {
 	margin-top: -1px;
+	font-weight: 100;
 	padding: 3px;
 	text-align: center;
 	background-color: var(--main-bg);
