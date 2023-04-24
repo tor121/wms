@@ -428,7 +428,6 @@ max-width: 1080px;
 .lights,
 .documents,
 .garden,
-.safety 
 .security {
 	padding-bottom: 70px;
 	border-bottom: 1px solid var(--amethyst);
@@ -437,7 +436,6 @@ max-width: 1080px;
 .heat,
 .electricity,
 .garden,
-.safety 
 .security {
 	padding-top: 70px;
 }
@@ -553,7 +551,7 @@ display: none;
 margin-bottom: 30px;
 }
 
-.electriity__btn,
+.electricity__btn,
 .security__btn,
 .heat__btn {
 color: var(--amethyst);
@@ -998,6 +996,12 @@ color: var(--amethyst);
 					flex-direction: column;
 }
 
+.security__container {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+					flex-direction: column;
+}
 .electricity__text {
 	margin-bottom: 15px;
 }
@@ -1135,6 +1139,9 @@ color: var(--amethyst);
 }
 
 .electricity {
+	margin-bottom: 0;
+}
+.security {
 	margin-bottom: 0;
 }
 
